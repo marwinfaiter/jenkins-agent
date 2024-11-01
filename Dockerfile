@@ -1,4 +1,4 @@
-FROM jenkins/ssh-agent:jdk11
+FROM jenkins/ssh-agent:jdk21
 USER root
 
 RUN apt-get update && apt-get install --no-install-recommends -y lsb-release curl ca-certificates && rm -rf /var/lib/apt/lists/*
